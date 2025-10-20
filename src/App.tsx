@@ -15,7 +15,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <BrowserRouter>
+      <BrowserRouter basename="/inflai-demo">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/analyze" element={<Analyze />} />
