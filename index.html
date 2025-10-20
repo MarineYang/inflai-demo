@@ -13,6 +13,16 @@
   <meta property="og:description" content="AI가 분석하는 인스타그램 성장 전략. 브랜딩부터 콘텐츠 기획까지 맞춤형 컨설팅을 받아보세요." />
   <meta property="og:type" content="website" />
 
+  <script>
+    // GitHub Pages SPA 라우팅 처리
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <script type="module" crossorigin src="/inflai-demo/assets/index-_ih_0cpG.js"></script>
   <link rel="stylesheet" crossorigin href="/inflai-demo/assets/index-jE0EuMAb.css">
 </head>
